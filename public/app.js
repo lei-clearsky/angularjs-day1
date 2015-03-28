@@ -56,10 +56,6 @@ app.controller('MainController', function($scope) {
     }
 	];
 	$scope.answerQuestion = function(theAnswer, flashCard) {
-		console.log(theAnswer)
-		// $scope.flashCards.forEach(card, index) {
-		// 	if (card)
-		// }
 		flashCard.answered = true;
 		flashCard.answeredCorrectly = theAnswer.correct
 	}
